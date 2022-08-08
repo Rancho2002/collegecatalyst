@@ -1,0 +1,16 @@
+
+.none {
+  background: linear-gradient(red, purple);
+  color: #c9c9f5;
+  text-shadow: 4px 0px 2px rgb(255, 255, 214);
+  font-weight: bolder;
+}
+#headline_none{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 50px;
+}

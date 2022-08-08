@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Tangerine:wght@700&family=Ubuntu:wght@500&family=Yuji+Mai&display=swap");
+ul li {
+  list-style: none;
+  /* color: black; */
+  margin: 4px 16px;
+  font-size: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid transparent; */
+  padding: 15px;
+  overflow-x: hidden;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  border-radius: 8px;
+  /* font-weight: bolder; */
+  overflow-x: hidden;
+}
+td a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: darkblue;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+td a:hover {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: yellow;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: darkblue;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* 
+
+    font-family: 'Tangerine', cursive; */
+
+.btn {
+  width: 5vw;
+  height: 6vh;
+  background-color: grey;
+  color: ivory;
+  margin: 5px 10px 3px 5px;
+  border: 2px solid black;
+  /* margin-top: 3px;
+    margin-bottom: 3px; */
+  border-radius: 20px;
+  font-family: "Yuji Mai", serif;
+  font-weight: 900;
+}
+.btn:hover {
+  width: 5vw;
+  height: 6vh;
+  background-color: grey;
+  color: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-family: "Yuji Mai", serif;
+  font-weight: bolder;
+}

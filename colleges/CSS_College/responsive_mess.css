@@ -1,0 +1,31 @@
+@media screen and (max-width: 700px) {
+  body {
+    zoom: 80%;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+  .subheadline {
+    font-size: 20px;
+  }
+  .tdata {
+    font-size: 10px;
+  }
+  .theadline {
+    font-size: 10px;
+    /* width: 40px; */
+  }
+  .my-1 {
+    font-size: 8px !important;
+  }
+  .distance {
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+  .ratings {
+    font-size: 10px !important;
+  }
+  td span.contact a {
+    font-size: 12px;
+  }
+}

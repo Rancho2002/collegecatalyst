@@ -1,0 +1,36 @@
+@media screen and (max-width: 1000px) {
+  nav ul li {
+    font-size: 30px;
+  }
+  .navlink {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+  .search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search input {
+    align-items: center;
+    background-color: lightcyan;
+    width: 25vw;
+    height: 2vh;
+    border-radius: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0 5px;
+    border: 2px solid black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .searchIcon {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 1vh;
+  }
+}

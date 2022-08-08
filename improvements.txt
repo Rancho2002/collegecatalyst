@@ -1,0 +1,8 @@
+marquee to img --- deleted;
+added slider image;
+deletion of search and button;
+deleted inline css from tr tag and add a new class "theadline"(line 64 rkmgec);
+added sticky class to all;
+line 75 deleted inline css;
+deleted 'distanceDetails' class;
+added javascript;

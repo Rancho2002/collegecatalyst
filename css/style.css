@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pushster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: cornsilk;
+  overflow-x: hidden;
+}
+main {
+  /* overflow-y: hidden; */
+  background-color: cornsilk;
+}
+header {
+  background-color: rgb(36 34 71);
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+}
+nav ul {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+.logonav {
+  /* border-width: 2px 2px 0 2px; */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+/* .anotherlogo1 {
+  border-radius: 100%;
+}
+.anotherlogo2 {
+  border-radius: 100%;
+} */
+.headline {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 12px ; */
+  padding: 12px;
+  border: 2px solid black;
+  background-color: #ffed1d;
+  font-size: 40px;
+  font-family: algerian;
+}
+.headline2 {
+  display: flex;
+  justify-content: flex-start;
+  background-color: burlywood;
+  overflow-y: hidden;
+}
+.description {
+  background-color: rgb(255, 248, 206);
+  /* font-family: "Pushster", cursive; */
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 25px;
+  color: #00005c;
+}
+.description .strong {
+  color: rgb(41, 0, 0);
+  text-shadow: 2px 0 3px rgb(29, 0, 29);
+  font-weight: 900;
+}
+
+#backtotop {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  /* border: 1px solid white; */
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(82 6 114 / 83%);
+}
+
+.search input {
+  caret-color: red;
+  color: red;
+  align-items: center;
+  background-color: lightcyan;
+  width: 30vw;
+  height: 6vh;
+  border-radius: 30px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  border: 2px solid black;
+  /* font-family:Courier New', Courier, monospace; */
+  font-size: 15px;
+  font-weight: bolder;
+}
+.searchIcon {
+  background: transparent;
+  position: relative;
+  top: 2.5vh;
+  right: 2vw;
+}
+.miniheadline {
+  padding: 20px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.my-1 {
+  text-align: center;
+  font-family: fantasy;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: lighter;
+}
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+li.titleTime {
+  position: absolute;
+  right: 0;
+  top: 26px;
+}
+#time {
+  margin-left: 8px;
+}
+#intro {
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+  color: rgb(24, 86, 255);
+  font-weight: 700;
+  text-shadow: 2px 0 2px white;
+  text-decoration: underline black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+footer {
+  width: 100vw;
+  background-color: black;
+  color: white;
+  position: relative;
+  /* height: 100vh; */
+}
+footer > h2 {
+  font-size: 30px;
+  padding: 10px;
+}
+#members {
+  display: flex;
+  background-color: black;
+}
+#core1,
+#core2,
+#core3,
+#core4 {
+  margin: 4px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+#email,
+#message {
+  padding: 8px;
+  display: block;
+  margin-right: 25px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  width: 250px;
+  outline: none;
+  border: 2px solid red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#message {
+  height: 28px;
+}
+
+#index-btn {
+  padding: 7px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid white;
+  background-color: rgb(0, 136, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#index-btn:active {
+  outline-color: rgb(0, 170, 255);
+  outline-offset: 2px;
+  outline-width: 4px;
+  outline-style: solid;
+  transition: 0.1s;
+}
+#copyright {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#copyright > p {
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
