@@ -65,12 +65,12 @@ include "parts/_header.php";
                                                                 rel="noopener">Click
                                                                 Here</a></span></td>
                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                target="_blank" rel="noopener">Click Here</a></span>
+                                                                href="/ricdynamic/hospitals/"
+                                                                 rel="noopener">Click Here</a></span>
                                         </td>
                                         <td style="width: 15%;"><a title="Click Here"
-                                                        href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                        target="_blank" rel="noopener">Click Here</a></td>
+                                                        href="/ricdynamic/others/"
+                                                         rel="noopener">Click Here</a></td>
                                 </tr>';
                                 }
                                 ?>
@@ -92,12 +92,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>
@@ -119,12 +119,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>
@@ -146,12 +146,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>
@@ -173,12 +173,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>
@@ -200,12 +200,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>
@@ -226,12 +226,12 @@ include "parts/_header.php";
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="https://assets.examflix.in/wbjeeb/ALPG/PVTENGG/ABACUS.pdf"
-                                                                 target="_blank" rel="noopener">Click Here</a></span>
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
                                          </td>
                                          <td style="width: 15%;"><a title="Click Here"
-                                                         href="https://www.youtube.com/watch?v=lnYyM2ZVdDE"
-                                                         target="_blank" rel="noopener">Click Here</a></td>
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                  }
                                 ?>

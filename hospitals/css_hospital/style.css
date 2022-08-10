@@ -96,13 +96,18 @@ body {
     padding: 20px;
     background-color: black;
     border-radius: 20px;
-}
-.btn-return a{
     text-decoration: none;
     color: rgb(234, 0, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
+.btn-return:hover{
+    background-color: rgb(234, 0, 255);
+    color: black;
+    cursor: pointer;
+}
+
+
 /* @media (max-width:640px) {
     .btn-return{
         width: 100%;

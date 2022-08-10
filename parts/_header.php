@@ -20,10 +20,10 @@
                                 <div class="logonav">
                                         <img src="img/logo.png" width='80px' height="80px" alt="logo">
                                 </div>
-                                <li><a class='navlink' href="/">Home</a></li>
-                                <li><a class='navlink' href="#description">About</a></li>
-                                <li><a class='navlink' href="#footer">Contact Us</a></li>
-                                <li><a class='navlink' href="members/index.html">Members Area</a></li>
+                                <li><a class='navlink' href="/ricdynamic/">Home</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#description">About</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
+                                <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
                                 <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"
                                                 style="color: rgb(255, 210, 88); text-shadow:  1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"></span>
                                 </li>
