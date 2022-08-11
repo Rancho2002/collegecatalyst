@@ -18,7 +18,7 @@
                 <nav>
                         <ul>
                                 <div class="logonav">
-                                        <img src="img/logo.png" width='80px' height="80px" alt="logo">
+                                        <img src="/ricdynamic/img/logoM.png" width='80px' height="80px" alt="logo">
                                 </div>
                                 <li><a class='navlink' href="/ricdynamic/">Home</a></li>
                                 <li><a class='navlink' href="/ricdynamic/#description">About</a></li>

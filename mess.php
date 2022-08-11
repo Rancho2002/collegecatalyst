@@ -37,7 +37,7 @@
         <nav>
             <ul>
                 <li><a href="/ricdynamic/index.php">Home</a></li>
-                <p>Want to contribute Data in our website ??? <a href="../../../../members/index.html"
+                <p>Want to contribute Data in our website ??? <a href="/ricdynamic/members/"
                         style="text-decoration: none;color: rgb(0, 0, 0);font-weight: bolder;" target="_blank">&nbsp;
                         Click Here</a>
                 </p>
