@@ -1,6 +1,38 @@
-<?php
+<!-- <?php
 include "parts/_header.php";
-?>
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Click Viewport" content="width=device-width, initial-scale=1.0">
+        <title>CollegeCatalyst</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/utilis.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+        <header id="head">
+                <nav>
+                        <ul>
+                                <div class="logonav">
+                                        <img src="/ricdynamic/img/logoM.png" width='80px' height="80px" alt="logo">
+                                </div>
+                                <li><a class='navlink' href="/ricdynamic/">Home</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#description">About</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
+                                <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
+                                <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"
+                                                style="color: rgb(255, 210, 88); text-shadow:  1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"></span>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
 <main>
                 <div>
                         <h1 class="headline">
@@ -26,7 +58,7 @@ include "parts/_header.php";
                                 any
                                 issue.</p>
                 </div>
-                <!-- onkeyup="myFunction()" -->
+              
                 <div class="search">
                         <input type="" id="myInput" placeholder="Search for Colleges..">
                         <img src="img/search.png" width="20px" height="20px" alt="search icon" class="searchIcon">
@@ -257,13 +289,17 @@ include "parts/_header.php";
 
                 <div id="members">
                         <div id="column1">
-                                <p id="core1">Deep Sharma, RKMGEC </p>
-                                <p id="core2">Niloy Accharyya, RKMGEC</p>
+                        <p id="core1" class="core">Arijit Ghosh, RKMGEC</p>
+                        <p id="core2" class="core">Niloy Accharyya, RKMGEC</p>
+                               
+                             
                         </div>
                         <div id="column2">
-                                <p id="core3">Debapriya Chatterjee, IISER</p>
-                                <p id="core4">Arijit Ghosh(Developer), RKMGEC</p>
+                                <p id="core3" class="core">Ratan Bhowmick, RKMGEC</p>
+                                <p id="core4" class="core">Deep Sharma, RKMGEC </p>
+                               
                         </div>
+                      
                 </div>
 
                 <hr style="color: white; margin-top: 4px;">

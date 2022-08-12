@@ -174,10 +174,7 @@ footer > h2 {
   display: flex;
   background-color: black;
 }
-#core1,
-#core2,
-#core3,
-#core4 {
+.core{
   margin: 4px;
   padding: 10px;
   font-size: 20px;
