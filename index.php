@@ -78,19 +78,78 @@ include "parts/_header.php";
                                         <th style="width: 15%;" class="my-1 sticky">Hospitals</th>
                                         <th style="width: 15%;" class="my-1 sticky">Others</th>
                                 </tr>
+                                <?php
+                                include "parts/_dbconnect.php";
+                                ?>
+                                 <tr style="height: 46px; background-color: #f1c40f;">
+                                        <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
+                                        <strong>STATE
+                                                        GOVERNMENT ENGINEERING
+                                                        COLLEGE (8)</strong>
+                                        </td>
+                                <?php
+                                 $sql="SELECT * FROM `colleges` where `cat`='sgec' ORDER BY college_id DESC";
+                                 $result=mysqli_query($conn,$sql);
+                                 $sl=1;
+                                 while($row=mysqli_fetch_assoc($result)){
+                                 echo '<tr style="height: 48px;" class="collegename">
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="width: 50%;">'.$row['college'].'</td>
+                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
+                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
+                                                                 rel="noopener">Click
+                                                                 Here</a></span></td>
+                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
+                                         </td>
+                                         <td style="width: 15%;"><a title="Click Here"
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
+                                 </tr>';
+                                 $sl++;
+                                 }
+                                ?>
+                                <tr style="height: 46px; background-color: #f1c40f;">
+                                        <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
+                                        <strong>UNIVERSITY/UNIVERSITY DEPARTMENT
+                                                        (11)</strong>
+                                        </td>
+                                <?php
+                                $sl=1;
+                                 $sql="SELECT * FROM `colleges` where `cat`='ud'";
+                                 $result=mysqli_query($conn,$sql);
+                                 while($row=mysqli_fetch_assoc($result)){
+                                 echo '<tr style="height: 48px;" class="collegename">
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="width: 50%;">'.$row['college'].'</td>
+                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
+                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
+                                                                 rel="noopener">Click
+                                                                 Here</a></span></td>
+                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
+                                         </td>
+                                         <td style="width: 15%;"><a title="Click Here"
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
+                                 </tr>';
+                                 }
+                                ?>
                                 <tr style="height: 46px; background-color: #f1c40f;">
                                         <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
                                                 <strong>PRIVATE
                                                         ENGINEERING COLLEGE
                                                         (65)</strong>
                                         </td>
-                                <?php
-                                include "parts/_dbconnect.php";
-                                $sql="SELECT * FROM `colleges` where `cat`='pec'";
+                               <?php
+                               $sl=1;
+                                $sql="SELECT * FROM `colleges` where `cat`='pec' order by college_id";
                                 $result=mysqli_query($conn,$sql);
                                 while($row=mysqli_fetch_assoc($result)){
                                 echo '<tr style="height: 48px;" class="collegename">
-                                        <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
+                                        <td style="text-align: center; width: 5%;">'.$sl.'</td>
                                         <td style="width: 50%;">'.$row['college'].'</td>
                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -113,11 +172,12 @@ include "parts/_header.php";
                                                         COLLEGE (21)</strong>
                                         </td>
                                 <?php
+                                $sl=1;
                                  $sql="SELECT * FROM `colleges` where `cat`='sappc'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -133,33 +193,7 @@ include "parts/_header.php";
                                  </tr>';
                                  }
                                 ?>
-                                <tr style="height: 46px; background-color: #f1c40f;">
-                                        <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
-                                        <strong>STATE
-                                                        GOVERNMENT ENGINEERING
-                                                        COLLEGE (8)</strong>
-                                        </td>
-                                <?php
-                                 $sql="SELECT * FROM `colleges` where `cat`='sgec'";
-                                 $result=mysqli_query($conn,$sql);
-                                 while($row=mysqli_fetch_assoc($result)){
-                                 echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
-                                         <td style="width: 50%;">'.$row['college'].'</td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
-                                                                 rel="noopener">Click
-                                                                 Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
-                                 </tr>';
-                                 }
-                                ?>
+                               
                                 <tr style="height: 46px; background-color: #f1c40f;">
                                         <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
                                         <strong>STATE
@@ -167,11 +201,12 @@ include "parts/_header.php";
                                                         (1)</strong>
                                         </td>
                                 <?php
+                                $sl=1;
                                  $sql="SELECT * FROM `colleges` where `cat`='sgpc'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -194,11 +229,12 @@ include "parts/_header.php";
                                                         COLLEGE (1)</strong>
                                         </td>
                                 <?php
+                                $sl=1;
                                  $sql="SELECT * FROM `colleges` where `cat`='ogec'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -215,43 +251,19 @@ include "parts/_header.php";
                                  }
                                 ?>
                                 
-                                <tr style="height: 46px; background-color: #f1c40f;">
-                                        <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
-                                        <strong>UNIVERSITY/UNIVERSITY DEPARTMENT
-                                                        (11)</strong>
-                                        </td>
-                                <?php
-                                 $sql="SELECT * FROM `colleges` where `cat`='ud'";
-                                 $result=mysqli_query($conn,$sql);
-                                 while($row=mysqli_fetch_assoc($result)){
-                                 echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
-                                         <td style="width: 50%;">'.$row['college'].'</td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
-                                                                 rel="noopener">Click
-                                                                 Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
-                                 </tr>';
-                                 }
-                                ?>
+                                
                                 <tr style="height: 46px; background-color: #f1c40f;">
                                         <td style="width: 100%;" colspan="5" class="miniheadline" id="collegetype">
                                         <strong>PRIVATE
                                                         UNIVERSITY (7)</strong>
                                         </td>
                                 <?php
+                                $sl=1;
                                  $sql="SELECT * FROM `colleges` where `cat`='pu'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
+                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
