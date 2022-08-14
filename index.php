@@ -1,6 +1,3 @@
-<!-- <?php
-include "parts/_header.php";
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +22,7 @@ include "parts/_header.php";
                                 </div>
                                 <li><a class='navlink' href="/ricdynamic/">Home</a></li>
                                 <li><a class='navlink' href="/ricdynamic/#description">About</a></li>
-                                <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#footer" style="color: #80ccff">Contact Us</a></li>
                                 <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
                                 <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"
                                                 style="color: rgb(255, 210, 88); text-shadow:  1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"></span>
@@ -107,6 +104,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  $sl++;
                                  }
                                 ?>
@@ -135,6 +133,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  }
                                 ?>
                                 <tr style="height: 46px; background-color: #f1c40f;">
@@ -191,6 +190,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  }
                                 ?>
                                
@@ -220,6 +220,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  }
                                 ?>
                                 <tr style="height: 46px; background-color: #f1c40f;">
@@ -248,6 +249,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  }
                                 ?>
                                 
@@ -277,6 +279,7 @@ include "parts/_header.php";
                                                          href="/ricdynamic/others/"
                                                           rel="noopener">Click Here</a></td>
                                  </tr>';
+                                 
                                  }
                                 ?>
                                                         
@@ -286,8 +289,9 @@ include "parts/_header.php";
                 </table>
         </main>
 
-        <footer id="footer">
-                <h2>Core Members :-</h2>
+        <footer id="footer" style="position: relative;">
+                <img src="img/logo.jpeg" alt="" width="40px" style="position: absolute;top:0;left:2px;top:4px; border-radius: 10px;">
+                <h2 style="margin-left:40px ;">Core Members :-</h2>
                 <hr style="width: 20%; border: 2px dotted white;">
                 <div class="form">
                         <form action="https://sheetdb.io/api/v1/hnvxglv2w6tzt" method="post" id="sheetdb-form">
@@ -302,7 +306,7 @@ include "parts/_header.php";
                 <div id="members">
                         <div id="column1">
                         <p id="core1" class="core">Arijit Ghosh, RKMGEC</p>
-                        <p id="core2" class="core">Niloy Accharyya, RKMGEC</p>
+                        <p id="core2" class="core">Niloy Acharyya, RKMGEC</p>
                                
                              
                         </div>

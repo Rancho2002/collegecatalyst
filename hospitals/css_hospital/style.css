@@ -1,8 +1,16 @@
 body {
     background: #2d2d2d;
     overflow-x: hidden;
+    width: 100vw;
   }
-  
+  .phone{
+    display: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 50px;
+  }
   .Iam {
     padding: 2em 5em;
     font: normal 40px/50px Montserrat, sans-serif;
@@ -21,12 +29,12 @@ body {
     top: 40px;
   }
   .Iam .innerIam {
-    display: inline-block;
-    color: #f6f22d;
-    position: relative;
-    white-space: nowrap;
-    top: 0;
-    left: 0;
+      display: inline-block;
+      color: #f6f22d;
+      position: relative;
+      white-space: nowrap;
+      top: 0;
+      left: 0;
   
   
   /*animation*/
@@ -86,7 +94,7 @@ body {
   }
 
 .return{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -108,16 +116,15 @@ body {
 }
 
 
-/* @media (max-width:640px) {
-    .btn-return{
-        width: 100%;
+@media (max-width:694px) {
+    .Iam {
+        display: none;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: none; */
     }
-    .return{
-        position: absolute;
+    .phone{
+        display: block;
     }
+
+
 }
-@media (max-width:620px){
-    .btn-return{
-        margin-left: 180px;
-    }
-} */
