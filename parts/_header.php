@@ -21,7 +21,7 @@
                                         <img src="/ricdynamic/img/logoM.png" width='80px' height="80px" alt="logo">
                                 </div>
                                 <li><a class='navlink' href="/ricdynamic/">Home</a></li>
-                                <li><a class='navlink' href="/ricdynamic/#description">About</a></li>
+                                <li><a class='navlink' href="/ricdynamic/about.php">About</a></li>
                                 <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
                                 <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
                                 <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"

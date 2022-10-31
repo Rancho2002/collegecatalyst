@@ -6,3 +6,5 @@ added sticky class to all;
 line 75 deleted inline css;
 deleted 'distanceDetails' class;
 added javascript;
+
+about Separated: FAQ section
