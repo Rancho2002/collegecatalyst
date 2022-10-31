@@ -2,8 +2,12 @@ let a;
 let time;
 setInterval(() => {
   a = new Date();
-
-  time = a.getHours() + " : " + a.getMinutes();
+  min=a.getMinutes();
+  // console.log(min);
+  hour=a.getHours();
+  if(min<10) min='0'+String(min);
+  if(hour<10) hour='0'+String(hour);
+  time = hour + " : " + min;
   // a.toLocaleTimeString(time)
   let setTime = document.getElementById("time");
   setTime.innerHTML = time;

@@ -22,7 +22,7 @@
                                 </div>
                                 <li><a class='navlink' href="/ricdynamic/">Home</a></li>
                                 <li><a class='navlink' href="/ricdynamic/#description">About</a></li>
-                                <li><a class='navlink' href="/ricdynamic/#footer" style="color: #80ccff">Contact Us</a></li>
+                                <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
                                 <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
                                 <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"
                                                 style="color: rgb(255, 210, 88); text-shadow:  1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"></span>
@@ -51,7 +51,7 @@
                                         every mess & hospitals located near college under 10 Km.In others tab, student
                                         can find
                                         about restaurants,
-                                        cinema complex etc. </span>Feel free to <a href="#footer">contact us</a> for
+                                        cinema complex etc. </span>Feel free to <a href="#footer" style="color: blue">contact us</a> for
                                 any
                                 issue.</p>
                 </div>
@@ -114,12 +114,12 @@
                                                         (11)</strong>
                                         </td>
                                 <?php
-                                $sl=1;
+                                
                                  $sql="SELECT * FROM `colleges` where `cat`='ud'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -143,12 +143,11 @@
                                                         (65)</strong>
                                         </td>
                                <?php
-                               $sl=1;
                                 $sql="SELECT * FROM `colleges` where `cat`='pec' order by college_id";
                                 $result=mysqli_query($conn,$sql);
                                 while($row=mysqli_fetch_assoc($result)){
                                 echo '<tr style="height: 48px;" class="collegename">
-                                        <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                        <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                         <td style="width: 50%;">'.$row['college'].'</td>
                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                 href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -171,12 +170,12 @@
                                                         COLLEGE (21)</strong>
                                         </td>
                                 <?php
-                                $sl=1;
+        
                                  $sql="SELECT * FROM `colleges` where `cat`='sappc'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -201,12 +200,12 @@
                                                         (1)</strong>
                                         </td>
                                 <?php
-                                $sl=1;
+                      
                                  $sql="SELECT * FROM `colleges` where `cat`='sgpc'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -230,12 +229,12 @@
                                                         COLLEGE (1)</strong>
                                         </td>
                                 <?php
-                                $sl=1;
+                          
                                  $sql="SELECT * FROM `colleges` where `cat`='ogec'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -260,12 +259,12 @@
                                                         UNIVERSITY (7)</strong>
                                         </td>
                                 <?php
-                                $sl=1;
+                        
                                  $sql="SELECT * FROM `colleges` where `cat`='pu'";
                                  $result=mysqli_query($conn,$sql);
                                  while($row=mysqli_fetch_assoc($result)){
                                  echo '<tr style="height: 48px;" class="collegename">
-                                         <td style="text-align: center; width: 5%;">'.$sl.'</td>
+                                         <td style="text-align: center; width: 5%;">'.$row['college_id'].'</td>
                                          <td style="width: 50%;">'.$row['college'].'</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title='.$row['title'].'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" target="_blank"
@@ -298,7 +297,7 @@
                                 <input type="email" id="email" placeholder="Enter your email"
                                         aria-errormessage="Email is required " name="Email" required>
                                 <input type="text" id="message" placeholder="Type your concern" name="Message">
-                                <input type="hidden" name="Created" id="date" value="ki jai">
+                                <!-- <input type="hidden" name="Created" id="date" value="ki jai"> -->
                                 <button type="submit" id="index-btn">Submit</button>
                         </form>
                 </div>
