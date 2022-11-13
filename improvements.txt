@@ -8,3 +8,12 @@ deleted 'distanceDetails' class;
 added javascript;
 
 about Separated: FAQ section
+'''
+  <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
+                                                                 href="/ricdynamic/hospitals/"
+                                                                  rel="noopener">Click Here</a></span>
+                                         </td>
+                                         <td style="width: 15%;"><a title="Click Here"
+                                                         href="/ricdynamic/others/"
+                                                          rel="noopener">Click Here</a></td>
+'''

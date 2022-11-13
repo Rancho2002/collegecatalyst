@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 main {
-  /* overflow-y: hidden; */
   background-color: cornsilk;
 }
 header {
@@ -30,30 +29,46 @@ nav {
 }
 nav ul {
   display: flex;
-  /* justify-content: flex-end; */
 }
 nav ul li {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
+  list-style: none;
+  margin: 4px 16px;
+  font-size: 20px;
 }
+
+.login{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.login button {
+  padding: 10px;
+  height: 50%;
+  margin: 10px 4px ;
+  background-color: rgb(69, 162, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  border: none;
+  font-size: 18px;
+}
+.login button a{
+  text-decoration: none;
+  color: white;
+}
+
 .logonav {
-  /* border-width: 2px 2px 0 2px; */
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
-/* .anotherlogo1 {
-  border-radius: 100%;
-}
-.anotherlogo2 {
-  border-radius: 100%;
-} */
+
 .headline {
   display: flex;
   justify-content: space-between;
-  /* margin: 12px ; */
   padding: 12px;
   border: 2px solid black;
   background-color: #ffed1d;
@@ -68,11 +83,11 @@ nav ul li {
 }
 .description {
   background-color: rgb(255, 248, 206);
-  /* font-family: "Pushster", cursive; */
   font-family: "Source Serif 4", sans-serif;
   font-size: 25px;
   color: #00005c;
 }
+
 .description .strong {
   color: rgb(41, 0, 0);
   text-shadow: 2px 0 3px rgb(29, 0, 29);
@@ -86,7 +101,6 @@ nav ul li {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  /* border: 1px solid white; */
 }
 
 .search {
@@ -107,7 +121,6 @@ nav ul li {
   margin-bottom: 3px;
   padding-left: 15px;
   border: 2px solid black;
-  /* font-family:Courier New', Courier, monospace; */
   font-size: 15px;
   font-weight: bolder;
 }
@@ -134,11 +147,17 @@ nav ul li {
 th {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+
 }
 td {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+.tdname{
+  margin-left: 4px;
+}
+
+/*! time
 li.titleTime {
   position: absolute;
   right: 0;
@@ -147,6 +166,10 @@ li.titleTime {
 #time {
   margin-left: 8px;
 }
+
+*/
+
+
 #intro {
   font-size: 50px;
   position: absolute;
@@ -164,7 +187,6 @@ footer {
   background-color: black;
   color: white;
   position: relative;
-  /* height: 100vh; */
 }
 footer > h2 {
   font-size: 30px;
@@ -219,6 +241,8 @@ footer > h2 {
   outline-style: solid;
   transition: 0.1s;
 }
+
+
 #copyright {
   height: 8vh;
   display: flex;

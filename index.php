@@ -39,11 +39,11 @@
                                 <tr style="height: 46px; background-color: #80ccff;" class="sticky" id="header">
                                         <th style="width: 5%; text-align: center;" class="sticky"><strong>Sl.</strong>
                                         </th>
-                                        <th style="width: 50%;" class="sticky"><strong>Name of the Institute</strong>
+                                        <th style="width: 60%;" class="sticky"><strong>Name of the Institute</strong>
                                         </th>
-                                        <th style="width: 15%;" class="my-1 sticky">Mess</th>
-                                        <th style="width: 15%;" class="my-1 sticky">Hospitals</th>
-                                        <th style="width: 15%;" class="my-1 sticky">Others</th>
+                                        <th style="width: 35%;" class="my-1 sticky">Mess</th>
+                                        <!-- <th style="width: 15%;" class="my-1 sticky">Hospitals</th>
+                                        <th style="width: 15%;" class="my-1 sticky">Others</th> -->
                                 </tr>
                                 <?php
                                 include "parts/_dbconnect.php";
@@ -61,19 +61,12 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $sl . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
-                                 </tr>';
+                                        </tr>';
 
                                                 $sl++;
                                         }
@@ -90,18 +83,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                         }
                                         ?>
@@ -117,18 +103,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                         <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                        <td style="width: 50%;">' . $row['college'] . '</td>
+                                        <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                 href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                 rel="noopener">Click
                                                                 Here</a></span></td>
-                                        <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                href="/ricdynamic/hospitals/"
-                                                                 rel="noopener">Click Here</a></span>
-                                        </td>
-                                        <td style="width: 15%;"><a title="Click Here"
-                                                        href="/ricdynamic/others/"
-                                                         rel="noopener">Click Here</a></td>
                                 </tr>';
                                         }
                                         ?>
@@ -145,18 +124,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                         }
                                         ?>
@@ -174,18 +146,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                         }
                                         ?>
@@ -202,18 +167,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                         }
                                         ?>
@@ -231,18 +189,11 @@
                                         while ($row = mysqli_fetch_assoc($result)) {
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
-                                         <td style="width: 50%;">' . $row['college'] . '</td>
+                                         <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
                                          <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
                                                                  href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/hospitals/"
-                                                                  rel="noopener">Click Here</a></span>
-                                         </td>
-                                         <td style="width: 15%;"><a title="Click Here"
-                                                         href="/ricdynamic/others/"
-                                                          rel="noopener">Click Here</a></td>
                                  </tr>';
                                         }
                                         ?>

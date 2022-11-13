@@ -24,9 +24,10 @@
                                 <li><a class='navlink' href="/ricdynamic/about.php">About</a></li>
                                 <li><a class='navlink' href="/ricdynamic/#footer">Contact Us</a></li>
                                 <li><a class='navlink' href="/ricdynamic/members/index.html">Members Area</a></li>
-                                <li class="titleTime" style="font-size: 20px;color: white;">Time :<span id="time"
-                                                style="color: rgb(255, 210, 88); text-shadow:  1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"></span>
-                                </li>
+                                <div class="login">
+                                        <button><a href="#login">Login</a></button>
+                                        <button><a href="#signup">SignUp</a></button>
+                                </div>
                         </ul>
                 </nav>
         </header>
