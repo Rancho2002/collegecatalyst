@@ -408,7 +408,7 @@
     </div>
 
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
+      © <?php echo date('Y'); ?> Copyright:
       <a class="text-white" href="https://collegecatalyst.great-site.net/">collegecatalyst.net</a>
     </div>
   </footer>
