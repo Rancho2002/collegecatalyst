@@ -1,14 +1,26 @@
+
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="./style.css">
+  <title>CollegeCatalyst- <?php echo $_GET['type'] ?></title>
+</head>
+<body class="overflow-x-hidden">
 <nav class="fixed top-0 left-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
     <div class="container m-auto flex justify-between items-center text-gray-700 w-full">
       <div>
-        <img src="https://raw.githubusercontent.com/Rancho2002/collegecatalyst/master/developed/img/logoM.png" alt="logo" width="80" class="ml-2 inline">
+        <img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline">
         <h1 class="py-6 text-xl font-bold inline">CollegeCatalyst</h1>
       </div>
       <ul class="hidden md:flex items-center text-base font-semibold cursor-pointer gap-6">
-        <li><a href="" class="hover-nav hover:text-white py-3 px-4 ">Home</a></li>
-        <li><a href="" class="hover-nav hover:text-white py-3 px-4 ">About</a></li>
-        <li><a href="" class="hover-nav hover:text-white py-3 px-4 ">Members Area</a></li>
-        <li><a href="#contact" class="hover-nav hover:text-white py-3 px-4 ">Contact Us</a></li>
+        <li><a href="" class="hover-nav hover:text-white py-3 px-4">Home</a></li>
+        <li><a href="" class="hover-nav hover:text-white py-3 px-4">About</a></li>
+        <li><a href="" class="hover-nav hover:text-white py-3 px-4">Members Area</a></li>
+        <li><a href="#contact" class="hover-nav hover:text-white py-3 px-4">Contact Us</a></li>
         <li><a href="" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4">Login</a></li>
         <li><a href="" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Sign Up</a>
         </li>
@@ -34,3 +46,4 @@
 
     </div>
   </nav>
+  <div class="mt-20"></div>
