@@ -1,3 +1,20 @@
+<?php
+include "parts/_dbconnect.php";
+$send=0;
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $message=$_POST["message"];
+    $sql="INSERT INTO `contact` (`message`, `timestamp`) VALUES ('$message', current_timestamp())";
+    $res=mysqli_query($conn,$sql);
+    if($res){
+      $send=1;
+    }
+    else{
+      $send=2;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +31,7 @@
   <nav class="fixed top-0 left-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
     <div class="container m-auto flex justify-between items-center text-gray-700 w-full">
       <div>
-        <img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline">
+        <img src="https://raw.githubusercontent.com/Rancho2002/collegecatalyst/master/developed/img/logoM.png" alt="logo" width="80" class="ml-2 inline">
         <h1 class="py-6 text-xl font-bold inline">CollegeCatalyst</h1>
       </div>
       <ul class="hidden md:flex items-center text-base font-semibold cursor-pointer gap-6">
@@ -49,13 +66,25 @@
   </nav>
 
   <div class="mt-20"></div>
+  <?php
+  if($send==1){
+    echo '
+  <div class="font-semibold p-3 bg-green-300" id="alertM">Success! Message sent successfully.</div>';
+  }
+  else if($send==2){
+    echo '
+    <div class="font-semibold p-3 bg-red-300" id="alertM">Failed! Please try again.</div>';
+  }
+  ?>
+  
   <img src="img/sideimg.png" alt="" class="hidden md:block absolute right-10 top-32 -z-10" width="600">
 
   <div class="container w-screen py-10 m-auto font-semibold flex justify-center md:justify-start md:ml-36">
     <div class="p-4">
       <h1 class="text-8xl md:text-9xl text-red-400">What</h1>
       <h1 class="text-5xl md:text-7xl">do you currently</h1>
-      <h1 class="text-2xl md:text-5xl text-blue-700">looking for ?</h1>
+      <h1 class="text-2xl md:text-5xl text-blue-700">looking for</h1>
+      <h1 class="text-2xl md:text-4xl">near your college?</h1>
     </div>
   </div>
 
@@ -64,9 +93,9 @@
       class="box border rounded-lg mx-auto mt-12 p-2 w-72 hover:shadow-lg hover:scale-110 cursor-pointer duration-500">
       <div class="outside  hover:rounded-lg p-2 hover:shadow-lg">
         <div class="lay-1">
-          <img src="img/mess.png" alt="">
+          <img src="https://raw.githubusercontent.com/Rancho2002/collegecatalyst/master/developed/img/mess.png" alt="">
         </div>
-        <div class="lay-2 font-bold text-center p-2 bg-slate-200 rounded-lg hover:bg-slate-400">
+        <div class="lay-2 font-bold text-center p-2 bg-slate-400 md:bg-slate-200 rounded-lg hover:bg-slate-400">
           MESS
         </div>
         <div class="lay-3 p-2">
@@ -79,9 +108,9 @@
       class="box border rounded-lg mx-auto mt-12 p-2 w-72 hover:shadow-lg hover:scale-110 cursor-pointer duration-500">
       <div class="outside  hover:rounded-lg p-2 hover:shadow-lg">
         <div class="lay-1">
-          <img src="img/hospital.jpg" alt="">
+          <img src="https://raw.githubusercontent.com/Rancho2002/collegecatalyst/master/developed/img/hospital.jpg" alt="">
         </div>
-        <div class="lay-2 font-bold text-center  p-2 bg-slate-200 rounded-lg hover:bg-slate-400">
+        <div class="lay-2 font-bold text-center  p-2 bg-slate-400 md:bg-slate-200 rounded-lg hover:bg-slate-400">
           HOSPITALS
         </div>
         <div class="lay-3 p-2">
@@ -94,9 +123,9 @@
       class="box border rounded-lg mx-auto mt-12 p-2 w-72 hover:shadow-lg hover:scale-110 cursor-pointer duration-500">
       <div class="outside  hover:rounded-lg p-2 hover:shadow-lg">
         <div class="lay-1">
-          <img src="img/entertainment.jpg" alt="">
+          <img src="https://raw.githubusercontent.com/Rancho2002/collegecatalyst/master/developed/img/entertainment.jpg" alt="">
         </div>
-        <div class="lay-2 font-bold text-center  p-2 bg-slate-200 rounded-lg hover:bg-slate-400">
+        <div class="lay-2 font-bold text-center  p-2 bg-slate-400 md:bg-slate-200 rounded-lg hover:bg-slate-400">
           ENTERTAINMENT
         </div>
         <div class="lay-3 p-2">
@@ -126,8 +155,7 @@
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
             </svg>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
-            tenetur quae quaerat ad velit ab hic tenetur.
+            I face some problem while using this website. But thanks to collegecatalyst team, they just help me in every single step :)
           </p>
           <ul class="flex justify-center mb-0">
             <li>
@@ -184,8 +212,7 @@
               <path fill="currentColor"
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
-            </svg>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid commodi.
+            </svg>My booking is successful instanly and the team sends the confirmation mail very fast. Kudos to them.
           </p>
           <ul class="flex justify-center mb-0">
             <li>
@@ -242,8 +269,7 @@
               <path fill="currentColor"
                 d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
               </path>
-            </svg>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti.
+            </svg>Very smooth experience. No lag, 100% successful. Much appreciated.
           </p>
           <ul class="flex justify-center mb-0">
             <li>
@@ -360,11 +386,11 @@
       </div>
 
       <div>
-        <form action="">
-          <div class="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
+        <form action="" method="post">
+          <div class="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
             <div class="md:ml-auto md:mb-6">
               <p class="">
-                <strong>Sign up for our newsletter</strong>
+                <strong>Send a message to our team</strong>
               </p>
             </div>
 
@@ -385,7 +411,7 @@
                   ease-in-out
                   m-0
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                " id="exampleFormControlInput1" placeholder="Email address" />
+                " id="exampleFormControlInput1" placeholder="type your message" name="message" />
             </div>
 
             <div class="md:mr-auto mb-6">
@@ -408,14 +434,20 @@
     </div>
 
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-      © <?php echo date('Y'); ?> Copyright:
+    © <?php echo date('Y'); ?> Copyright:
       <a class="text-white" href="https://collegecatalyst.great-site.net/">collegecatalyst.net</a>
     </div>
   </footer>
 
-
+<script>
+  $alertM=document.getElementById("alertM");
+  setTimeout(() => {
+    $alertM.style.display="none";
+  }, 3000);
+</script>
 
 </body>
+
 
 
 
