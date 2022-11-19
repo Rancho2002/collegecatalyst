@@ -15,18 +15,7 @@
 
 <body>
         <main>
-                <?php
-                include "parts/_header.php";
-                ?>
-                <div>
-                        <h1 class="headline">
-                                <img src="img/sideLogo.png" width='57px' height='57px' alt="" class='anotherlogo1'>
-                                <marquee>
-                                        Colleges & it surroundings now in your hands
-                                </marquee>
-                                <img src="img/sideLogo.png" width='57px' height='57px' alt="" class='anotherlogo2'>
-                        </h1>
-                </div>
+                
                 <div class="search">
                         <input type="" id="myInput" placeholder="Search for Colleges..">
                         <img src="img/search.png" width="20px" height="20px" alt="search icon" class="searchIcon">
@@ -84,8 +73,7 @@
                                                 echo '<tr style="height: 48px;" class="collegename">
                                          <td style="text-align: center; width: 5%;">' . $row['college_id'] . '</td>
                                          <td style="width: 50%;" class="tdname">' . $row['college'] . '</td>
-                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"
-                                                                 href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
+                                         <td style="width: 15%;"><span style="font-size: 14px;"><a title="Click Here"href="/ricdynamic/mess.php/?title=' . $row['title'] . '&college_id=' . $row['college_id'] . '&cat=' . $row['cat'] . '" target="_blank"
                                                                  rel="noopener">Click
                                                                  Here</a></span></td>
                                  </tr>';

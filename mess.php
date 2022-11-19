@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.5">
 
-    <title><?php echo $_GET['title'] ?>/Mess</title>
+    <title><?php echo $_GET['title'] ?>Mess</title>
     <link rel="shortcut icon" href="/ricdynamic/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/ricdynamic/colleges/CSS_College/mess.css">
     <link rel="stylesheet" href="/ricdynamic/colleges/CSS_College/utilis_mess.css">

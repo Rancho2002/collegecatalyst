@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .hover-nav{
-    @apply hover:bg-blue-400 hover:rounded-lg transition-all duration-300;
+    @apply hover:text-blue-500 transition-all duration-300;
 }
 
 .hover-nav-btn{
