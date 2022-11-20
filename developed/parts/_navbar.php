@@ -7,11 +7,12 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>CollegeCatalyst- <?php echo $_GET['type'] ?></title>
 </head>
 <body class="overflow-x-hidden">
-<nav class="fixed top-0 left-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
-    <div class="container m-auto flex justify-between items-center text-gray-700 w-full">
+<nav class="fixed top-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
+    <div class="container m-auto flex justify-between items-center text-gray-700 w-full z-10 ">
       <div>
         <img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline">
         <h1 class="py-6 text-xl font-bold inline">CollegeCatalyst</h1>
