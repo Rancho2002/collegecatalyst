@@ -5,93 +5,86 @@ include "./parts/_navbar.php";
 $sql = "SELECT DISTINCT(cat) FROM `colleges`";
 $result = mysqli_query($conn, $sql);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $cat = $_POST["cat"];
-    $setSql = "SELECT * FROM `colleges` WHERE `cat`='$cat'";
-    $res = mysqli_query($conn, $setSql);
+  $cat = $_POST["cat"];
+  $setSql = "SELECT * FROM `colleges` WHERE `cat`='$cat'";
+  $res = mysqli_query($conn, $setSql);
 }
 ?>
-<div class="flex justify-between sm:px-6 bg-purple-200">
-    <h1 class="p-4 font-bold md:text-2xl font-mono ">Private Engineering College</h1>
-    <div class="hidden md:block">
-        <input type="text" class="h-12 mt-2 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges..">
-        <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500 mt-2 "></i>
+
+
+<?php
+$sl = 1;
+if (isset($_POST["cat"])) {
+
+  $test = mysqli_num_rows($res);
+  if ($test) {
+    echo '<div class="flex justify-between sm:px-6 bg-purple-200">';
+    if ($_POST["cat"] == "pec") {
+      echo '<h1 class="college-cat">Private Engineering College</h1>';
+    } else if ($_POST["cat"] == "sgec") {
+      echo '<h1 class="college-cat">State Government Engineering College</h1>';
+    } else if ($_POST["cat"] == "ud") {
+      echo '<h1 class="college-cat">UNIVERSITY/UNIVERSITY DEPARTMENT</h1>';
+    } else if ($_POST["cat"] == "sappc") {
+      echo '<h1 class="college-cat">STAND ALONE PRIVATE PHARMACY COLLEGE</h1>';
+    } else if ($_POST["cat"] == "sgpc") {
+      echo '<h1 class="college-cat">STATE GOVERNMENT PHARMACY COLLEGE</h1>';
+    } else if ($_POST["cat"] == "ogec") {
+      echo '<h1 class="college-cat">OTHER GOVERNMENT ENGINEERING COLLEGE</h1>';
+    } else if ($_POST["cat"] == "pu") {
+      echo '<h1 class="college-cat">PRIVATE UNIVERSITY</h1>';
+    }
+    echo '
+            <div class="flex items-center md:block md:mt-10">
+            <input type="text" class="h-8 md:h-12 mr-1 w-24 text-[10px] p-2 md:text-sm md:w-96 md:pr-8 md:pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges.."  id="myInput">
+        </div>
     </div>
-</div>
-<div class="flex flex-col">
-  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-      <div class="overflow-hidden">
-        <table class="min-w-full">
-          <thead class="border-b ">
-            <tr>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                Sl
-              </th>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-               Colleges
-              </th>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-                Mess
-              </th>
-            
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b text-center">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">1</td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                ramkrishna mahato govt college
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Otto
-              </td>
-              
-            </tr>
-            <tr class="border-b text-center">
-              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">1</td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                ramkrishna mahato govt college
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Otto
-              </td>
-              
-            </tr>
-            
-          </tbody>
-        </table>
+    <div class="flex flex-col">
+      <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class=" inline-block min-w-full sm:px-6 lg:px-8">
+          <div class="overflow-hidden">
+            <table class="min-w-full">
+              <thead class="border-b bg-slate-100">
+                <tr>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left ">
+                    Sl.
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center w-3/4">
+                   Colleges
+                  </th>
+                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center w-1/4">
+                    Mess
+                  </th>
+                
+                </tr>
+              </thead>
+              <tbody>';
+    while ($row = mysqli_fetch_assoc($res)) {
+      echo '<tr class="border-b text-center collegename">
+                  <td class="px-6 py-4 text-sm font-medium text-gray-800 text-left">' . $sl . '</td>
+                  <td class="text-sm text-gray-900 font-serif px-6 py-4">
+                  ' . $row['college'] . '
+                  </td>
+                  <td class="text-sm text-gray-900 font-sans px-6 py-4 hover:bg-slate-200 hover:cursor-pointer hover:font-bold underline"><a href="">
+                    Click here</a>
+                  </td>
+                  
+                </tr>';
+      $sl++;
+    }
+    echo '
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-    <?php
-    if (isset($_POST["cat"])) {
-
-        $test = mysqli_num_rows($res);
-        if ($test) {
-            if ($_POST["cat"] == "pec") {
-                echo '<h1 class="bg-purple-200 p-4 font-bold md:text-2xl drop-shadow-lg font-mono">Private Engineering College</h1>';
-            } else if ($_POST["cat"] == "sgec") {
-                echo '<h1>State Government Engineering College</h1>';
-            } else if ($_POST["cat"] == "ud") {
-                echo '<h1>UNIVERSITY/UNIVERSITY DEPARTMENT</h1>';
-            } else if ($_POST["cat"] == "sappc") {
-                echo '<h1>STAND ALONE PRIVATE PHARMACY COLLEGE</h1>';
-            } else if ($_POST["cat"] == "sgpc") {
-                echo '<h1>STATE GOVERNMENT PHARMACY COLLEGE</h1>';
-            } else if ($_POST["cat"] == "ogec") {
-                echo '<h1>OTHER GOVERNMENT ENGINEERING COLLEGE</h1>';
-            } else if ($_POST["cat"] == "pu") {
-                echo '<h1>PRIVATE UNIVERSITY</h1>';
-            }
-            while ($row = mysqli_fetch_assoc($res)) {
-                echo $row['college'] . '<br>';
-            }
-        } else {
-            echo "No data found";
-        }
-    } else {
-        echo '
+    ';
+  } else {
+    echo "No data found";
+  }
+} else {
+  echo '
     <div class="w-full h-[85vh] flex flex-col justify-center items-center bg-gray-300 p-10">
     <div class="ques">
         <h1 class="text-2xl md:text-4xl font-bold mb-10">Select which category your college belong to?</h1>
@@ -117,7 +110,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </div>';
-    }
+}
 
-    include "./parts/_footer.php";
-    ?>
+include "./parts/_footer.php";
+?>
+<script src="./parts/script.js"></script>
+</body>
+
+</html>

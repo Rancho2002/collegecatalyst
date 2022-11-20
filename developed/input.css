@@ -11,3 +11,6 @@
     @apply hover:bg-blue-700 hover:text-white w-full ;
 }
 
+.college-cat{
+    @apply p-4 font-bold md:text-2xl font-mono;
+}
