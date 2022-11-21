@@ -4,7 +4,7 @@ include "./parts/_dbconnect.php";
 include "./parts/_navbar.php";
 $sql = "SELECT DISTINCT(cat) FROM `colleges`";
 $result = mysqli_query($conn, $sql);
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["cat"])) {
   $cat = $_POST["cat"];
   $setSql = "SELECT * FROM `colleges` WHERE `cat`='$cat'";
   $res = mysqli_query($conn, $setSql);
@@ -44,7 +44,7 @@ if (isset($_POST["cat"])) {
         <div class=" inline-block min-w-full sm:px-6 lg:px-8">
           <div class="overflow-hidden">
             <table class="min-w-full">
-              <thead class="border-b-2 border-gray-800 bg-white">
+              <thead class="border-b border-gray-800 bg-white">
                 <tr>
                   <th scope="col" class="text-sm font-bold text-black px-6 py-4 text-left ">
                     Sl.
@@ -58,9 +58,9 @@ if (isset($_POST["cat"])) {
                 
                 </tr>
               </thead>
-              <tbody class="">';
+              <tbody>';
     while ($row = mysqli_fetch_assoc($res)) {
-      echo '<tr class="border-b border-gray-400 text-center collegename hover:bg-slate-100">
+      echo '<tr class="border-b-[0.5px] border-gray-400 text-center collegename hover:bg-slate-100">
                   <td class="px-6 py-4 text-sm font-bold text-gray-800 text-left">' . $sl . '</td>
                   <td class="text-sm text-blue-800 font-bold font-serif px-6 py-4">
                   ' . $row['college'] . '
@@ -82,20 +82,29 @@ if (isset($_POST["cat"])) {
     </div>
     ';
   } else {
-    echo "No data found";
+    echo '
+    <div class="h-[80vh]">
+    <h1 class="text-4xl uppercase mb-10"> No data found or \'select\' field is entered.</h1>
+    <div class="flex justify-center">
+    <button class="select-btn"><a href="" class="hover:underline">Back to selection</a></button>
+    </div>
+    </div>
+    ';
   }
 } else {
   echo '
     <div class="w-full h-[85vh] flex flex-col justify-center items-center bg-gray-300 p-10">
-    <div class="ques">
-        <h1 class="text-2xl md:text-4xl font-bold mb-10">Select which category your college belong to?</h1>
+    <div class="ques capitalize mb-4 font-bold">
+        <h1 class="text-4xl md:text-6xl">Select</h1>
+        <h1 class="text-2xl md:text-4xl">which category</h1>
+        <h1 class="text-xl md:text-2xl">your college belong to?</h1>
     </div>
     <div class="bg-white w-80 md:w-[30rem] p-4 rounded-lg mb-12">
         <div class="shadow-2xl p-2 rounded-lg bg-slate-100 my-auto md:h-64">
             <form action="" method="post" class="leading-10 p-2">
-                <label for="category" class="font-semibold ">Select your choice</label>
-                <select class="w-full mx-auto bg-slate-200 rounded-lg my-4 py-1 ring ring-blue-300 outline-none leading-[4rem]" id="category" name="cat">
-                    <option value="null" selected>Select</option>
+                <label for="category" class="font-semibold text-blue-600 text-2xl font-serif">Select your choice</label>
+                <select class="w-full mx-auto bg-slate-200 rounded-lg my-4 py-1 ring ring-blue-300 outline-none leading-[4rem] px-3" id="category" name="cat">
+                    <option value="null" selected>SELECT</option>
                     <option value="sgec">STATE GOVERNMENT</option>
                     <option value="ud">UNIVERSITY</option>
                     <option value="pec">PRIVATE</option>
@@ -105,7 +114,7 @@ if (isset($_POST["cat"])) {
                     <option value="pu">PRIVATE UNIVERSITY</option>
                 </select>
                 <div class="flex justify-center">
-                    <button type="submit" class="p-2 bg-blue-400 rounded-lg text-sm font-bold   mt-24">Submit</button>
+                    <button type="submit" class="select-btn">Enter</button>
                 </div>
             </form>
         </div>

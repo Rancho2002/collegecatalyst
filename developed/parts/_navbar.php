@@ -1,3 +1,19 @@
+<?php
+$_GET['type']="Home";
+include "parts/_dbconnect.php";
+$send = 0;
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
+  $email=$_POST['email'];
+  $message = $_POST["message"];
+  $sql = "INSERT INTO `contact` (`email`,`message`, `timestamp`) VALUES ('$email','$message', current_timestamp())";
+  $res = mysqli_query($conn, $sql);
+  if ($res) {
+    $send = 1;
+  } else {
+    $send = 2;
+  }
+}
+?>
 <!DOCTYPE html>
 <html class="scroll-smooth">
 
@@ -13,7 +29,7 @@
 <nav class="fixed top-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
     <div class="container m-auto flex justify-between items-center text-gray-700 w-full z-10 ">
       <div>
-        <img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline">
+       <a href="/ricdynamic/developed/"><img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline"></a> 
         <h1 class="py-6 text-xl font-bold inline">CollegeCatalyst</h1>
       </div>
       <ul class="hidden md:flex items-center text-base font-semibold cursor-pointer gap-6">
@@ -47,3 +63,12 @@
     </div>
   </nav>
   <div class="mt-20"></div>
+  <?php
+  if ($send == 1) {
+    echo '
+  <div class="font-semibold p-3 bg-green-300" id="alertM">Success! Message sent successfully.</div>';
+  } else if ($send == 2) {
+    echo '
+    <div class="font-semibold p-3 bg-red-300" id="alertM">Failed! Please try again.</div>';
+  }
+  ?>

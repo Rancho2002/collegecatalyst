@@ -14,3 +14,7 @@
 .college-cat{
     @apply p-4 font-bold md:text-2xl font-mono;
 }
+
+.select-btn{
+    @apply p-3 bg-blue-400 rounded-lg mt-16 text-2xl font-mono;
+}

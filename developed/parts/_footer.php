@@ -1,5 +1,5 @@
 <footer class="text-center bg-gray-900 text-white">
-  <div class="container px-6 pt-6">
+  <div class="container px-6 pt-6 mx-auto">
     <div class="flex justify-center mb-6">
       <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="w-2 h-full mx-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -48,7 +48,7 @@
         <div class="gap-4 justify-center items-center">
           <div class="md:ml-auto md:mb-6">
             <p class="" id="contact">
-              <strong>Send a message to our team</strong>
+              <strong class="text-2xl uppercase underline ">:: Send a message to our team ::</strong>
             </p>
           </div>
 
@@ -79,3 +79,10 @@
     <a class="text-white" href="https://collegecatalyst.great-site.net/">collegecatalyst.net</a>
   </div>
 </footer>
+
+<script>
+   $alertM = document.getElementById("alertM");
+    setTimeout(() => {
+      $alertM.style.display = "none";
+    }, 3000);
+</script>
