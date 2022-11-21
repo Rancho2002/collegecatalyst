@@ -35,7 +35,7 @@ if (isset($_POST["cat"])) {
       echo '<h1 class="college-cat">PRIVATE UNIVERSITY</h1>';
     }
     echo '
-            <div class="flex items-center md:block md:mt-10">
+            <div class="flex items-center">
             <input type="text" class="h-8 md:h-12 mr-1 w-24 text-[10px] p-2 md:text-sm md:w-96 md:pr-8 md:pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges.."  id="myInput">
         </div>
     </div>
@@ -44,28 +44,29 @@ if (isset($_POST["cat"])) {
         <div class=" inline-block min-w-full sm:px-6 lg:px-8">
           <div class="overflow-hidden">
             <table class="min-w-full">
-              <thead class="border-b bg-slate-100">
+              <thead class="border-b-2 border-gray-800 bg-white">
                 <tr>
-                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left ">
+                  <th scope="col" class="text-sm font-bold text-black px-6 py-4 text-left ">
                     Sl.
                   </th>
-                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center w-3/4">
+                  <th scope="col" class="text-sm font-bold text-black px-6 py-4 text-center w-3/4">
                    Colleges
                   </th>
-                  <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-center w-1/4">
+                  <th scope="col" class="text-sm font-bold text-black px-6 py-4 text-center w-1/4">
                     Mess
                   </th>
                 
                 </tr>
               </thead>
-              <tbody>';
+              <tbody class="">';
     while ($row = mysqli_fetch_assoc($res)) {
-      echo '<tr class="border-b text-center collegename">
-                  <td class="px-6 py-4 text-sm font-medium text-gray-800 text-left">' . $sl . '</td>
-                  <td class="text-sm text-gray-900 font-serif px-6 py-4">
+      echo '<tr class="border-b border-gray-400 text-center collegename hover:bg-slate-100">
+                  <td class="px-6 py-4 text-sm font-bold text-gray-800 text-left">' . $sl . '</td>
+                  <td class="text-sm text-blue-800 font-bold font-serif px-6 py-4">
                   ' . $row['college'] . '
                   </td>
-                  <td class="text-sm text-gray-900 font-sans px-6 py-4 hover:bg-slate-200 hover:cursor-pointer hover:font-bold underline"><a href="">
+                  <td class="text-sm text-sky-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline underline-offset-2">
+                  <a href="" class="hover:bg-sky-500 hover:text-white rounded-lg p-2 ">
                     Click here</a>
                   </td>
                   
