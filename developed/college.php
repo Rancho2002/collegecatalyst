@@ -37,6 +37,7 @@ if (isset($_POST["cat"])) {
     echo '
             <div class="flex items-center">
             <input type="text" class="h-8 md:h-12 mr-1 w-24 text-[10px] p-2 md:text-sm md:w-96 md:pr-8 md:pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges.."  id="myInput">
+           
         </div>
     </div>
     <div class="flex flex-col">
@@ -65,8 +66,8 @@ if (isset($_POST["cat"])) {
                   <td class="text-sm text-blue-800 font-bold font-serif px-6 py-4">
                   ' . $row['college'] . '
                   </td>
-                  <td class="text-sm text-sky-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline underline-offset-2">
-                  <a href="" class="hover:bg-sky-500 hover:text-white rounded-lg p-2 ">
+                  <td class="text-sm text-sky-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline">
+                  <a href="/ricdynamic/developed/mess.php/?title='. $row['title'] .'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" class="hover:bg-sky-500 hover:text-white rounded-lg p-2 ">
                     Click here</a>
                   </td>
                   

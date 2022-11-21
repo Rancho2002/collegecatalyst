@@ -1,5 +1,4 @@
 <?php
-$_GET['type']="Home";
 include "parts/_dbconnect.php";
 $send = 0;
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
@@ -21,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="/ricdynamic/developed/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>CollegeCatalyst- <?php echo $_GET['type'] ?></title>
 </head>
@@ -29,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
 <nav class="fixed top-0 bg-white w-full shadow-lg opacity-95" style="font-family: 'Roboto Slab', serif;">
     <div class="container m-auto flex justify-between items-center text-gray-700 w-full z-10 ">
       <div>
-       <a href="/ricdynamic/developed/"><img src="img/logoM.png" alt="logo" width="80" class="ml-2 inline"></a> 
+       <a href="/ricdynamic/developed/"><img src="/ricdynamic/developed/img/logoM.png" alt="logo" width="80" class="ml-2 inline"></a> 
         <h1 class="py-6 text-xl font-bold inline">CollegeCatalyst</h1>
       </div>
       <ul class="hidden md:flex items-center text-base font-semibold cursor-pointer gap-6">
