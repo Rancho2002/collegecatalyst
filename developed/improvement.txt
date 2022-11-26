@@ -2,3 +2,8 @@ college page e ekta search icon!
 "<div class="absolute top-4 right-3">
     <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
 </div>"
+
+npx tailwindcss -i input.css -o style.css     --watch                                                                   
+
+
+

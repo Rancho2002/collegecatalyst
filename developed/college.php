@@ -36,7 +36,7 @@ if (isset($_POST["cat"])) {
     }
     echo '
             <div class="flex items-center">
-            <input type="text" class="h-8 md:h-12 mr-1 w-24 text-[10px] p-2 md:text-sm md:w-96 md:pr-8 md:pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges.."  id="myInput">
+            <input type="text" class="h-8 md:h-12 mr-3 w-24 text-[10px] p-2 md:text-sm md:w-96 md:pr-8 md:pl-5 rounded z-0 focus:shadow focus:outline-none" placeholder="Search colleges.."  id="myInput">
            
         </div>
     </div>
@@ -63,7 +63,7 @@ if (isset($_POST["cat"])) {
     while ($row = mysqli_fetch_assoc($res)) {
       echo '<tr class="border-b-[0.5px] border-gray-400 text-center collegename hover:bg-slate-100">
                   <td class="px-6 py-4 text-sm font-bold text-gray-800 text-left">' . $sl . '</td>
-                  <td class="text-sm text-blue-800 font-bold font-serif px-6 py-4">
+                  <td class="text-sm text-[#2c1e1e] font-sans font-semibold px-6 py-4">
                   ' . $row['college'] . '
                   </td>
                   <td class="text-sm text-sky-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline">
