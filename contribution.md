@@ -3,9 +3,9 @@
 
 # How to Contribute?
 
-👉All the modifications have to be done inside the <a href="/developed">developed</a> directory.
-👉Create a local fork of this repo
-👉Run Apache and MySql server 
-👉Import the the <a href="/developed/collegecatalyst.sql">collegecatalyst.sql</a> from developed directory in your local database
-👉Now you can modify the website as your wish and create a PR
-👉And its done, you made your first successful PR. 🎉
+👉All the modifications have to be done inside the <a href="/developed">developed</a> directory.<br>
+👉Create a local fork of this repo<br>
+👉Run Apache and MySql server <br>
+👉Import the the <a href="/developed/collegecatalyst.sql">collegecatalyst.sql</a> from developed directory in your local database<br>
+👉Now you can modify the website as your wish and create a PR<br>
+👉And its done, you made your first successful PR. 🎉<br>
