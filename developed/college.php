@@ -62,12 +62,12 @@ if (isset($_POST["cat"])) {
               <tbody>';
     while ($row = mysqli_fetch_assoc($res)) {
       echo '<tr class="border-b-[0.5px] border-gray-400 text-center collegename hover:bg-slate-100">
-                  <td class="px-6 py-4 text-sm font-bold text-gray-800 text-left">' . $sl . '</td>
+                  <td class="px-6 py-4 text-sm font-bold text-gray-800 text-center">' . $sl . '</td>
                   <td class="text-sm text-[#2c1e1e] font-sans font-semibold px-6 py-4">
                   ' . $row['college'] . '
                   </td>
-                  <td class="text-sm text-sky-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline">
-                  <a href="/ricdynamic/developed/mess.php/?title='. $row['title'] .'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" class="hover:bg-sky-500 hover:text-white rounded-lg p-2 ">
+                  <td class="text-sm text-blue-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline">
+                  <a href="/ricdynamic/developed/mess.php/?title='. $row['title'] .'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" class="md:hover:bg-sky-500 md:hover:text-white rounded-lg md:p-2 ">
                     Click here</a>
                   </td>
                   
