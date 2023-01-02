@@ -21,7 +21,7 @@ if ($num) {
     </div>
     <table class="min-w-full min-h-screen text-center mt-10">
     <thead class="border border-gray-800">
-        <tr>
+        <tr class="text-sm md:text-lg">
             <th scope="col" class="w-[10%] text-center">Sl.</th> 
             <th scope="col" class="w-[30%]">Mess</th>
             <th scope="col" class="w-[20%]">Check Details</th>
@@ -35,8 +35,8 @@ if ($num) {
             <td class="text-sm text-[#2c1e1e] font-sans font-semibold px-6 py-4">'.$mess['mess'].'</td>
             <td class="text-sm font-mono underline"><a href="../details.php/?name='.$mess['mess'].'&sl='.$mess['sl'].'">Know Details</a></td>
             <td class="text-sm font-sans px-6 py-4 font-bold underline ">
-                  <a href="https://buy.stripe.com/14k6pn8tM0aTdc44gg" class="bg-blue-500 text-white rounded-lg p-2 hover:ring-2 hover:ring-blue-300 text-[10px] md:text-sm hover:cursor-pointer">
-                    Book here</a>
+            <a href="https://buy.stripe.com/14k6pn8tM0aTdc44gg" class="md:bg-blue-500 md:text-white text-blue-500 rounded-lg md:p-2 hover:ring-2 hover:ring-blue-300 text-[10px] md:text-sm hover:cursor-pointer">
+            Book here</a>
             </td>
         </tr>
             ';

@@ -3,7 +3,7 @@ college page e ekta search icon!
     <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
 </div>"
 
-npx tailwindcss -i input.css -o style.css     --watch                                                                   
+npx tailwindcss -i input.css -o style.css --watch                                                                   
 
 
 
