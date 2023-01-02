@@ -1,7 +1,8 @@
 <?php
 $_GET['type'] =$_GET["name"];
+$sl=$_GET["sl"];
 include "./parts/_dbconnect.php";
-$sql = "SELECT * FROM `mess` where `mess`='$_GET[name]'";
+$sql = "SELECT * FROM `mess` where `sl`='$sl'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 include "./parts/_navbar.php";
