@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="box border-2 rounded-lg mx-auto mt-12 p-2 w-72 hover:shadow-lg hover:scale-110 cursor-pointer duration-500">
       <div class="outside  hover:rounded-lg p-2 hover:shadow-lg hover:shadow-black">
-        <a href="./others/">
+        <a href="./others.php">
           <div class="lay-1">
             <img src="./img/entertainment.jpg" alt="">
           </div>
@@ -156,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
         <div class="mb-12 md:mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://media.licdn.com/dms/image/D4D03AQFakhhQYUd-5A/profile-displayphoto-shrink_400_400/0/1671040279364?e=1677110400&v=beta&t=-neN3FawWGzXe-5I90ABHaeeA-3Wex36f9uRbbze5w8" class="rounded-full shadow-lg w-32" />
+            <img src="profile/ratan.jpeg" class="rounded-full shadow-lg w-32" />
           </div>
           <h5 class="text-lg font-bold mb-4">Ratan Bhowmick</h5>
           <h6 class="font-medium text-blue-600 mb-4">Web Developer</h6>
@@ -191,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="mb-12 md:mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://avatars.githubusercontent.com/u/92109154?v=4" class="rounded-full shadow-lg w-32" />
+            <img src="profile/arijit.jpg" class="rounded-full shadow-lg w-32" />
           </div>
           <h5 class="text-lg font-bold mb-4">Arijit Ghosh</h5>
           <h6 class="font-medium text-blue-600 mb-4">Web Developer</h6>
@@ -219,7 +219,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="mb-0">
           <div class="flex justify-center mb-6">
-            <img src="https://media-exp1.licdn.com/dms/image/D4D03AQEtK5y5mAJp1A/profile-displayphoto-shrink_100_100/0/1663516281311?e=1674086400&v=beta&t=AG36e6HTMn7pJenSvv5ENIVjF_9xmbO7v7aHW_6gGTI" class="rounded-full shadow-lg w-32" />
+            <img src="profile/niloy.jpeg"  class="rounded-full shadow-lg w-32 " />
           </div>
           <h5 class="text-lg font-bold mb-4">Niloy Acharyya</h5>
           <h6 class="font-medium text-blue-600 mb-4">Marketing Specialist</h6>
