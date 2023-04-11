@@ -67,7 +67,7 @@ if (isset($_POST["cat"])) {
                   ' . $row['college'] . '
                   </td>
                   <td class="text-sm text-blue-500 font-sans px-6 py-4 hover:cursor-pointer font-bold underline">
-                  <a href="/ricdynamic/developed/mess.php/?title='. $row['title'] .'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" class="md:hover:bg-sky-500 md:hover:text-white rounded-lg md:p-2 ">
+                  <a href="/ricdynamic/V2/mess.php/?title='. $row['title'] .'&college_id='.$row['college_id'].'&cat='.$row['cat'].'" class="md:hover:bg-sky-500 md:hover:text-white rounded-lg md:p-2 ">
                     Click here</a>
                   </td>
                   

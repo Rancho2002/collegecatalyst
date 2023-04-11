@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 include "parts/_dbconnect.php";
 $send = 0;
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
@@ -44,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
         <?php 
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
           echo '
-          <li><a href="#mail" class="py-2 px-4">'.$_SESSION["email"].'</a></li>
+          <li><a href="" class="text-xl py-2 px-4">'.$_SESSION["email"].'</a></li>
           <li><a href="/ricdynamic/V2/parts/_logout.php/" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Logout</a>
           </li>
           ';
@@ -52,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
         else{
           echo '
           <li><a href="/ricdynamic/V2/form.php/" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4">Login</a></li>
-          <li><a href="#warn" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Sign Up</a>
+          <li><a href="#" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Sign Up</a>
           </li>
           ';
         }
@@ -74,8 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
             
             <?php
             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-              echo '<li><a href="" class="text-sm py-2 px-4">'.$_SESSION["email"].'</a></li>
-              <li class=" mt-4"><a href="/ricdynamic/V2/parts/_logout.php/" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Logout</a>
+              echo '<li><a href="" class="text-xl py-2 px-4">'.$_SESSION["email"].'</a></li>
+              <li><a href="/ricdynamic/V2/parts/_logout.php/" class="hover-nav-btn bg-blue-300 duration-200 rounded-lg font-bold py-2 px-4 mr-2">Logout</a>
               </li>';
             }
             else{

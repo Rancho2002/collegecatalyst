@@ -7,3 +7,4 @@ npx tailwindcss -i input.css -o style.css --watch
 
 
 
+bug is : when logged in sending message is facing error, as both in $post method
