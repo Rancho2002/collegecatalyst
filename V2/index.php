@@ -269,6 +269,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </a>
       </div>
       <div>
+        
         <form action="" method="post">
           <div class="gap-4 justify-center items-center">
             <div class="md:ml-auto md:mb-6">
@@ -283,9 +284,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="md:mr-auto mb-6">
-              <button type="submit" class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-                Mail Us
-              </button>
+            <?php
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+          echo '<p class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+          Logout to use Mail
+        </p>';
+        }
+        else{
+          echo '<button type="submit" class="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+          Mail Us
+        </button>';
+        }
+        ?>
             </div>
           </div>
         </form>
@@ -309,11 +319,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   ?>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    // AOS.init();
     $alertM = document.getElementById("alertM");
     setTimeout(() => {
       $alertM.style.display = "none";
     }, 3000);
-    AOS.init();
     // $bannerM=document.getElementById("banner");
     // setTimeout(() => {
     //   $bannerM.style.display="none";
