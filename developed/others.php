@@ -47,7 +47,7 @@ if (isset($_POST["district"])) {
                 
                 </tr>
               </thead>
-              <tbody>';
+              <tbody class="min-h-[80vh]">';
     while ($row = mysqli_fetch_assoc($res)) {
       echo '<tr class="border-b-[0.5px] border-gray-400 text-center collegename hover:bg-slate-100">
                   <td class="px-6 py-4 text-sm font-bold text-gray-800 text-center">' . $sl . '</td>
